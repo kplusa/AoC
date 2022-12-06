@@ -1,4 +1,4 @@
-﻿using AoC._2022.Day5;
+﻿using AoC._2022.Day6;
 
 Console.WriteLine("AoC solutions");
 
@@ -6,4 +6,5 @@ Console.WriteLine("AoC solutions");
 // SecondDay.Execute();
 // ThirdDay.Execute();
 //FourthDay.Execute();
-FifthDay.Execute();
+//FifthDay.Execute();
+SixthDay.Execute();

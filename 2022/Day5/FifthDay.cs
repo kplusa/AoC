@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.ComponentModel;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Text.RegularExpressions;
 
 namespace AoC._2022.Day5;
@@ -33,8 +31,7 @@ public static class FifthDay
                 digits.Add(digit);
             }
 
-            for (int i = 0; i < digits[0]; i++)
-            {
+            for (var i = 0; i < digits[0]; i++)
                 switch (digits[1])
                 {
                     case 1:
@@ -74,11 +71,9 @@ public static class FifthDay
                         stack9.Pop();
                         break;
                 }
-            }
 
             //copies.Reverse(); Part two
             foreach (var item in copies)
-            {
                 switch (digits[2])
                 {
                     case 1:
@@ -109,8 +104,8 @@ public static class FifthDay
                         stack9.Push(item);
                         break;
                 }
-            }
         }
+
         Console.WriteLine($"{stack1.First()}" +
                           $"{stack2.First()}" +
                           $"{stack3.First()}" +
