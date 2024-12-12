@@ -7,7 +7,7 @@ public static class SixthDay
     public static void Execute()
     {
         Console.WriteLine($"Puzzle of the: {MethodBase.GetCurrentMethod()!.DeclaringType?.Name}");
-        var path = "./2022/Day6/datastream.txt";
+        var path = "./Day6/datastream.txt";
         var line = File.ReadLines(path).First();
         var i = 0;
         var sequence = "";

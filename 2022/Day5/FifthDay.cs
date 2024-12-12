@@ -8,7 +8,7 @@ public static class FifthDay
     public static void Execute()
     {
         Console.WriteLine($"Puzzle of the: {MethodBase.GetCurrentMethod()!.DeclaringType?.Name}");
-        var path = "./2022/Day5/instructions.txt";
+        var path = "./Day5/instructions.txt";
         var stack1 = new Stack<char>(new[] { 'Z', 'P', 'M', 'H', 'R' });
         var stack2 = new Stack<char>(new[] { 'P', 'C', 'J', 'B' });
         var stack3 = new Stack<char>(new[] { 'S', 'N', 'H', 'G', 'L', 'C', 'D' });

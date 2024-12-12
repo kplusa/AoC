@@ -7,7 +7,7 @@ public class FirstDay
     public static void Execute()
     {
         Console.WriteLine($"Puzzle of the: {MethodBase.GetCurrentMethod()!.DeclaringType?.Name}");
-        var path = "./2022/Day1/data.txt";
+        var path = "./Day1/data.txt";
         var sum = 0;
         List<int> listOfSums = new();
         foreach (var line in File.ReadLines(path))

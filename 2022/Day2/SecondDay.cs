@@ -24,7 +24,7 @@ public static class SecondDay
             draw 3
             lose 0
         */
-        var path = "./2022/Day2/strategy_guide.txt";
+        var path = "./Day2/strategy_guide.txt";
         Dictionary<string, int> paperRockScissorsDictionary = new();
         paperRockScissorsDictionary.Add("X", 1);
         paperRockScissorsDictionary.Add("Y", 2);

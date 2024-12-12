@@ -11,7 +11,7 @@ public static class FourthDay
         var pattern = @"\d+";
         var total = 0;
         var numbersLimit = 4;
-        var path = "./2022/Day4/pairs.txt";
+        var path = "./Day4/pairs.txt";
         List<int> numbers = new();
         foreach (var line in File.ReadLines(path))
         foreach (Match match in Regex.Matches(line, pattern))

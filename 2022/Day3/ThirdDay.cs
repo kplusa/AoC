@@ -8,7 +8,7 @@ public static class ThirdDay
     {
         Console.WriteLine($"Puzzle of the: {MethodBase.GetCurrentMethod()!.DeclaringType?.Name}");
         var priorityOfLetter = new Dictionary<char, int>();
-        var path = "./2022/Day3/rucksacks.txt";
+        var path = "./Day3/rucksacks.txt";
         List<int> listOfPrioritiesOfItems = new();
         var value = 0;
         var i = 0;
