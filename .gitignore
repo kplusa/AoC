@@ -352,3 +352,4 @@ MigrationBackup/
 target/
 debug/
 **/*.rs.bk
+assets/
