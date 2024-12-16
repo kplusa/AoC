@@ -353,3 +353,4 @@ target/
 debug/
 **/*.rs.bk
 assets/
+*.txt
