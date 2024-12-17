@@ -74,13 +74,47 @@ fn count_xmas(grid: &Vec<Vec<char>>) -> i32 {
     count
 }
 
+
+pub fn count_x_mas(grid: &Vec<Vec<char>>) -> usize {
+    let height = grid.len();
+    let width = grid[0].len();
+
+    let target = "MAS";
+    let target_rev = "SAM";
+    let mut count = 0;
+
+    for row in 0..(height - 2) {
+        for col in 0..(width - 2) {
+            let mut diagonal1 = String::new();
+            let mut diagonal2 = String::new();
+
+            for i in 0..3 {
+                let char1 = grid[row + i][col + i];
+                diagonal1.push(char1);
+
+                let char2 = grid[row + i][col + 2 - i];
+                diagonal2.push(char2);
+            }
+
+            if (diagonal1 == target || diagonal1 == target_rev)
+                && (diagonal2 == target || diagonal2 == target_rev)
+            {
+                count += 1;
+            }
+        }
+    }
+
+    count
+}
+
 pub fn part1(grid: &Vec<Vec<char>>) {
     let total_xmas = count_xmas(grid);
     println!("Part 1: The word 'XMAS' appears {} times in the word search.", total_xmas);
 }
 
 pub fn part2(grid: &Vec<Vec<char>>) {
-    
+    let total_x_mas = count_x_mas(grid);
+    println!("Part 2: The word 'X-MAS' appears {} times in the word search.", total_x_mas);
 }
 
 pub fn run() {
